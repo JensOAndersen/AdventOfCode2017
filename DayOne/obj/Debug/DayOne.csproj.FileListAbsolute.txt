@@ -1,0 +1,8 @@
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\DayOne\bin\Debug\DayOne.dll
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\DayOne\bin\Debug\DayOne.pdb
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\DayOne\bin\Debug\Toolbox.dll
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\DayOne\bin\Debug\Toolbox.pdb
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\DayOne\obj\Debug\DayOne.csprojResolveAssemblyReference.cache
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\DayOne\obj\Debug\DayOne.csproj.CoreCompileInputs.cache
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\DayOne\obj\Debug\DayOne.dll
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\DayOne\obj\Debug\DayOne.pdb

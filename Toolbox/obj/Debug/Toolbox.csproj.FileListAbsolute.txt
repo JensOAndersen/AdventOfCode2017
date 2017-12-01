@@ -1,0 +1,6 @@
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\Toolbox\bin\Debug\Toolbox.dll
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\Toolbox\bin\Debug\Toolbox.pdb
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\Toolbox\obj\Debug\Toolbox.csprojResolveAssemblyReference.cache
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\Toolbox\obj\Debug\Toolbox.csproj.CoreCompileInputs.cache
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\Toolbox\obj\Debug\Toolbox.dll
+C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\Toolbox\obj\Debug\Toolbox.pdb
