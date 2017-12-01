@@ -11,7 +11,13 @@ namespace AdventofCodeConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(DayOneSolution.GetCaptcha());
+            //Day 1, part 1 - Works!
+            //Console.WriteLine(DayOneSolution.GetCaptcha());
+
+            //Day 2, part 2 - WIP
+            Console.WriteLine(DayOneSolution.GetCaptchaHalf());
+
+            Console.ReadKey(); //stop the program from exiting
         }
     }
 }
