@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DayOne;
-
+using DayTwo;
 namespace AdventofCodeConsole
 {
     class Program
@@ -14,8 +14,14 @@ namespace AdventofCodeConsole
             //Day 1, part 1 - Works!
             //Console.WriteLine(DayOneSolution.GetCaptcha());
 
-            //Day 2, part 2 - WIP
-            Console.WriteLine(DayOneSolution.GetCaptchaHalf());
+            //Day 1, part 2 - Works!
+            //Console.WriteLine(DayOneSolution.GetCaptchaHalf());
+
+            //Day 2, part 1 - Works!;
+            //Console.WriteLine(DayTwoSolution.GetCorruptionChecksum());
+
+            //Day 2, part 2 - Works!
+            Console.WriteLine(DayTwoSolution.GetCorruptionCheckSumDiv());
 
             Console.ReadKey(); //stop the program from exiting
         }

@@ -8,7 +8,7 @@ namespace DayOne
 {
     public class DayOneSolution
     {
-        private static string input = TBox.GetStringsFromFile(@"C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\DayOne\Input.txt")[0];
+        private static string input = TBox.GetStringsFromFile(@"C:\Users\Seth_Laptop\Documents\Visual Studio 2017\Projects\AdventOfCode2017\AdventOfCode2017\DayOne\Input.txt")[0];
 
         /// <summary>
         /// Solves the first part of the day one puzzle

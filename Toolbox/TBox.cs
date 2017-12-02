@@ -35,5 +35,38 @@ namespace Toolbox
 
             return returnArr;
         }
+
+        public static int[,] Get2DArrayOfInts(string path, char seperator)
+        {
+            char sep = seperator;
+            string[] arr = GetStringsFromFile(path);
+            List<int[]> intList = new List<int[]>();
+            
+            foreach (string s in arr)
+            {
+                string[] temp = s.Split(sep);
+
+                int[] line = new int[temp.Length];
+
+                for (int i = 0; i < temp.Length; i++)
+                {
+                    line[i] = int.Parse(temp[i]);
+                }
+
+                intList.Add(line);
+            }
+
+            int[,] returnArr = new int[intList.Count, intList[0].Length];
+
+            for (int i = 0; i < returnArr.GetLength(0); i++)
+            {
+                for (int j = 0; j < returnArr.GetLength(1); j++)
+                {
+                    returnArr[i, j] = intList[i][j];
+                }
+            }
+
+            return returnArr;
+        }
     }
 }

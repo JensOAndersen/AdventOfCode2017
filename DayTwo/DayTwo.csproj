@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E562B17-0137-4ED5-B05C-1BE0AEE025D2}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>AdventofCodeConsole</RootNamespace>
-    <AssemblyName>AdventofCodeConsole</AssemblyName>
+    <ProjectGuid>{6BFAC251-793F-41DD-BE85-5ACDD6DD16D4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DayTwo</RootNamespace>
+    <AssemblyName>DayTwo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,20 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="DayTwoSolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Content Include="Input.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DayOne\DayOne.csproj">
-      <Project>{eb61e3d2-2b7e-466f-9edc-b86e6f2d5e0b}</Project>
-      <Name>DayOne</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DayTwo\DayTwo.csproj">
-      <Project>{6bfac251-793f-41dd-be85-5acdd6dd16d4}</Project>
-      <Name>DayTwo</Name>
+    <ProjectReference Include="..\Toolbox\Toolbox.csproj">
+      <Project>{f2fc3a1d-b30b-49df-8b55-b3ff9420aedd}</Project>
+      <Name>Toolbox</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
