@@ -16,7 +16,7 @@ namespace DayOne
         /// <returns></returns>
         public static int GetCaptcha()
         {
-            int sum = 0;
+            int sum = 0; //summen der skal returneres
             for (int i = 0; i < input.Length; i++)
             {
                 //check if the next value is outside the index of the array,

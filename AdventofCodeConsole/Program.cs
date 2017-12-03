@@ -21,7 +21,7 @@ namespace AdventofCodeConsole
             //Console.WriteLine(DayTwoSolution.GetCorruptionChecksum());
 
             //Day 2, part 2 - Works!
-            Console.WriteLine(DayTwoSolution.GetCorruptionCheckSumDiv());
+            //Console.WriteLine(DayTwoSolution.GetCorruptionCheckSumDiv());
 
             Console.ReadKey(); //stop the program from exiting
         }
