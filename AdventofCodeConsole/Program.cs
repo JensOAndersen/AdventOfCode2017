@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using DayOne;
 using DayTwo;
+using DayThree;
+using DayFour;
 namespace AdventofCodeConsole
 {
     class Program
@@ -22,6 +24,26 @@ namespace AdventofCodeConsole
 
             //Day 2, part 2 - Works!
             //Console.WriteLine(DayTwoSolution.GetCorruptionCheckSumDiv());
+
+            //Day 3, Part 1 - Works!
+            //Console.WriteLine( DayThreeSolution.SolutionOne() );
+
+            //Day 3, Part 2 - Works!
+            //int[,] sol = DayThreeSolution.SolutionTwo();
+            //for (int i = 0; i < sol.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < sol.GetLength(1); j++)
+            //    {
+            //        Console.Write(sol[j, i].ToString().PadLeft(10));
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //Day 4, Part 1 - Works!
+            //Console.WriteLine(DayFourSolution.ValidPasswordsPartOne());
+
+            //Day 4, Part 2 - WIP
+            Console.WriteLine(DayFourSolution.ValidPasswordsPartTwo());
 
             Console.ReadKey(); //stop the program from exiting
         }

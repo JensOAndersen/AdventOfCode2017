@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E562B17-0137-4ED5-B05C-1BE0AEE025D2}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>AdventofCodeConsole</RootNamespace>
-    <AssemblyName>AdventofCodeConsole</AssemblyName>
+    <ProjectGuid>{24CC5EB2-5758-4608-AFFB-AF9BE8C7AF10}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DayFour</RootNamespace>
+    <AssemblyName>DayFour</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,29 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="DayFourSolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\Toolbox\Toolbox.csproj">
+      <Project>{f2fc3a1d-b30b-49df-8b55-b3ff9420aedd}</Project>
+      <Name>Toolbox</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DayFour\DayFour.csproj">
-      <Project>{24cc5eb2-5758-4608-affb-af9be8c7af10}</Project>
-      <Name>DayFour</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DayOne\DayOne.csproj">
-      <Project>{eb61e3d2-2b7e-466f-9edc-b86e6f2d5e0b}</Project>
-      <Name>DayOne</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DayThree\DayThree.csproj">
-      <Project>{72d9263b-a7fa-49e6-952b-81f16b08f7c7}</Project>
-      <Name>DayThree</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DayTwo\DayTwo.csproj">
-      <Project>{6bfac251-793f-41dd-be85-5acdd6dd16d4}</Project>
-      <Name>DayTwo</Name>
-    </ProjectReference>
+    <Content Include="Input.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

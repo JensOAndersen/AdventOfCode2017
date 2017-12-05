@@ -31,7 +31,6 @@ namespace DayOne
                     sum += int.Parse(input[i].ToString());
                 }
             }
-
             return sum;
         }
 
