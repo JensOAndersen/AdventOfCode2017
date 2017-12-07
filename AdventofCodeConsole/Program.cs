@@ -7,12 +7,15 @@ using DayOne;
 using DayTwo;
 using DayThree;
 using DayFour;
+using DayFive;
 namespace AdventofCodeConsole
 {
     class Program
     {
         static void Main(string[] args)
         {
+            #region old
+
             //Day 1, part 1 - Works!
             //Console.WriteLine(DayOneSolution.GetCaptcha());
 
@@ -42,8 +45,12 @@ namespace AdventofCodeConsole
             //Day 4, Part 1 - Works!
             //Console.WriteLine(DayFourSolution.ValidPasswordsPartOne());
 
-            //Day 4, Part 2 - WIP
-            Console.WriteLine(DayFourSolution.ValidPasswordsPartTwo());
+            //Day 4, Part 2 - Works!
+            //Console.WriteLine(DayFourSolution.ValidPasswordsPartTwo());
+            #endregion
+
+            //Day 5, part 1 - WIP
+            Console.WriteLine(DayFiveSolution.SolutionPartOne());
 
             Console.ReadKey(); //stop the program from exiting
         }

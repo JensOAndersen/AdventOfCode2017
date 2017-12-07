@@ -9,7 +9,7 @@ namespace DayFour
 {
     public class DayFourSolution
     {
-        static string[] result = TBox.GetStringsFromFile(@"C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\DayFour\Input.txt");
+        static string[] result = TBox.GetStringsFromFile(@"C:\Users\Seth_Laptop\Documents\Visual Studio 2017\Projects\AdventOfCode2017\DayFour\Input.txt");
         public static int ValidPasswordsPartOne()
         {
             int uniqueCount = 0;
@@ -41,39 +41,33 @@ namespace DayFour
             int uniqueCount = 0;
             foreach (string s in result)
             {
-                string[] temp = s.Split(' ');
+                string[] words = s.Split(' ');
+                bool isNotValid = true;
 
-                bool isUnique = true;
-                for (int i = 0; i < temp.Length; i++)
+                for (int i = 0; i < words.Length; i++)
                 {
-                    string firstComparer = temp[i];
-                    for (int j = 0; j < temp.Length; j++)
+
+                    char[] firstComparer = words[i].ToCharArray();
+                    Array.Sort(firstComparer);
+                    string firstWord = new string(firstComparer);
+
+                    for (int j = 0; j < words.Length; j++)
                     {
-                        string secondComparer = temp[j];
 
-                        isUnique = !IsAnagram(firstComparer, secondComparer);
+                        char[] secondComparer = words[j].ToCharArray();
+                        Array.Sort(secondComparer);
+                        string secondWord = new string(secondComparer);
+
+                        if (i != j && firstWord == secondWord && isNotValid)
+                        {
+                            isNotValid = false;
+                            uniqueCount++;
+                        }
                     }
-                }
-                if (isUnique)
-                {
-                    uniqueCount++;
+                    
                 }
             }
             return uniqueCount;
-        }
-
-        static bool IsAnagram(string first, string second)
-        {
-            bool isA = true;
-            foreach (char s in first)
-            {
-                for (int i = second.Length-1; i > 0; i--)
-                {
-                    if (s != second[i]) isA = false;
-                }
-            }
-
-            return isA;
         }
     }
 }
