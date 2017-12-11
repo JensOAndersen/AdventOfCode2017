@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E562B17-0137-4ED5-B05C-1BE0AEE025D2}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>AdventofCodeConsole</RootNamespace>
-    <AssemblyName>AdventofCodeConsole</AssemblyName>
+    <ProjectGuid>{B391F626-7B32-49E0-9E15-D514E7D547B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DaySeven</RootNamespace>
+    <AssemblyName>DaySeven</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,48 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="DaySevenSolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Content Include="Input.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DayEight\DayEight.csproj">
-      <Project>{d044884a-929e-494b-8ebd-e4503a670208}</Project>
-      <Name>DayEight</Name>
+    <ProjectReference Include="..\Toolbox\Toolbox.csproj">
+      <Project>{f2fc3a1d-b30b-49df-8b55-b3ff9420aedd}</Project>
+      <Name>Toolbox</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DayFive\DayFive.csproj">
-      <Project>{2fbb9ee5-6f49-48da-a67d-e143cbb8cb90}</Project>
-      <Name>DayFive</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DayFour\DayFour.csproj">
-      <Project>{24cc5eb2-5758-4608-affb-af9be8c7af10}</Project>
-      <Name>DayFour</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DayOne\DayOne.csproj">
-      <Project>{eb61e3d2-2b7e-466f-9edc-b86e6f2d5e0b}</Project>
-      <Name>DayOne</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DaySeven\DaySeven.csproj">
-      <Project>{b391f626-7b32-49e0-9e15-d514e7d547b3}</Project>
-      <Name>DaySeven</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DaySix\DaySix.csproj">
-      <Project>{e490577c-b173-4c71-8b52-d97cc64d04f1}</Project>
-      <Name>DaySix</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DayThree\DayThree.csproj">
-      <Project>{72d9263b-a7fa-49e6-952b-81f16b08f7c7}</Project>
-      <Name>DayThree</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DayTwo\DayTwo.csproj">
-      <Project>{6bfac251-793f-41dd-be85-5acdd6dd16d4}</Project>
-      <Name>DayTwo</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

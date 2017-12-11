@@ -8,22 +8,28 @@ namespace DayFive
 {
     public class DayFiveSolution
     {
-        public static int[] input = TBox.GetIntsFromFile(@"C:\Users\Seth_Laptop\Documents\Visual Studio 2017\Projects\AdventOfCode2017\DayFive\Input.txt");
+        public static int[] input = TBox.GetIntsFromFile(@"C:\Users\josa\Documents\Visual Studio 2017\Projects\AdventOfCode\DayFive\Input.txt");
 
         public static int SolutionPartOne()
         {
             int steps = 0;
             int nextNumber = input[0];
+            int previousNumber = input[0];
+
             while (nextNumber >= 0 && nextNumber < input.Length)
             {
-                nextNumber = input[nextNumber];
+                previousNumber = nextNumber;
+                nextNumber += input[nextNumber];
 
-                int temp = input[nextNumber];
-
-                if (temp >= 0 && temp < input.Length)
+                if(nextNumber >= 0 && nextNumber < input.Length)
                 {
-                    input[temp] += 1;
-
+                    if(input[previousNumber] >= 3)
+                    {
+                        input[previousNumber] -= 1;
+                    } else
+                    {
+                        input[previousNumber] += 1;
+                    }
                 }
 
                 steps++; //number of steps taken
