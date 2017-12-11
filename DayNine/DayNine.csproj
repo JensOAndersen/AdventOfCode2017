@@ -43,5 +43,14 @@
     <Compile Include="DayNineSolution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toolbox\Toolbox.csproj">
+      <Project>{f2fc3a1d-b30b-49df-8b55-b3ff9420aedd}</Project>
+      <Name>Toolbox</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Input.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

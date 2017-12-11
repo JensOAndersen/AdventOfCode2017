@@ -61,6 +61,10 @@
       <Project>{24cc5eb2-5758-4608-affb-af9be8c7af10}</Project>
       <Name>DayFour</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DayNine\DayNine.csproj">
+      <Project>{7901feb5-7b01-4b0a-8f30-5bcfc30c6f70}</Project>
+      <Name>DayNine</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DayOne\DayOne.csproj">
       <Project>{eb61e3d2-2b7e-466f-9edc-b86e6f2d5e0b}</Project>
       <Name>DayOne</Name>

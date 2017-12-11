@@ -11,6 +11,8 @@ using DayFive;
 using DaySix;
 using DaySeven;
 using DayEight;
+using DayNine;
+
 namespace AdventofCodeConsole
 {
     class Program
@@ -50,7 +52,6 @@ namespace AdventofCodeConsole
 
             //Day 4, Part 2 - Works!
             //Console.WriteLine(DayFourSolution.ValidPasswordsPartTwo());
-            #endregion
 
             //Day 5, part 1 && part 2 - Works
             //Console.WriteLine(DayFiveSolution.SolutionPartOne());
@@ -67,7 +68,10 @@ namespace AdventofCodeConsole
             //Day 8, Part 1 and 2
             //Console.WriteLine(DayEightSolution.SolutionOne());
 
-            //Day 9, Part 1
+            //Day 9, Part 2
+            //Console.WriteLine(DayNineSolution.PartOne());
+            #endregion
+
 
             Console.ReadKey(); //stop the program from exiting
         }
