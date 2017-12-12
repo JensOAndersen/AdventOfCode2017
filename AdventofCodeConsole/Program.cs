@@ -12,6 +12,7 @@ using DaySix;
 using DaySeven;
 using DayEight;
 using DayNine;
+using DayTen;
 
 namespace AdventofCodeConsole
 {
@@ -72,6 +73,11 @@ namespace AdventofCodeConsole
             //Console.WriteLine(DayNineSolution.PartOne());
             #endregion
 
+            //Day 10, part 1
+            //Console.WriteLine(DayTenSolution.PartOne());
+
+            //Day 10, part 2
+            Console.WriteLine(DayTenSolution.PartTwo());
 
             Console.ReadKey(); //stop the program from exiting
         }
